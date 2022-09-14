@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Props } from "./Navbar";
+
 export const Nav = styled.nav`
   border-bottom: 1px solid #0000001c;
   min-height: 4.6875rem;
@@ -29,20 +30,19 @@ export const NavLinks = styled.ul<Props>`
   align-items: center;
 
   @media (max-width: 56.25em) {
-    display: ${(props) => (props.showMenu ? "block" : "none")};
-    margin: 0;
+    display: ${(props) => (props.showMenu ? "flex" : "none")};
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
     position: absolute;
     right: 0;
     top: 0;
     bottom: 0;
+    margin: 0;
     min-width: 100%;
     background-color: #000000c2;
     z-index: 5;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
   }
 `;
 export const NavItems = styled.li`
@@ -67,11 +67,19 @@ export const NavItems = styled.li`
   }
 `;
 
-export const NavIcon = styled.div`
+export const NavIcon = styled.div<Props>`
   display: none;
   @media (max-width: 56.25em) {
     display: block;
     cursor: pointer;
     z-index: 10;
+    color: ${(props) => (props.showMenu ? "#fff" : "#000")};
+
+    .close_menu {
+      display: ${(props) => (props.showMenu ? "block" : "none")};
+    }
+    .open_menu {
+      display: ${(props) => (props.showMenu ? "none" : "block")};
+    }
   }
 `;

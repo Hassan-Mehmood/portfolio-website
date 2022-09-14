@@ -13,7 +13,7 @@ import { TbMenu } from "react-icons/tb";
 import { RiCloseFill } from "react-icons/ri";
 
 export interface Props {
-  showMenu: boolean;
+  showMenu?: boolean;
 }
 
 const Navbar = () => {
@@ -26,8 +26,6 @@ const Navbar = () => {
       setShowMenu(true);
     }
   };
-
-  console.log(showMenu);
 
   return (
     <Nav>
@@ -53,11 +51,9 @@ const Navbar = () => {
               <a href="#Contact">Contact</a>
             </NavItems>
           </NavLinks>
-          <NavIcon onClick={handleIconClick}>
-            <TbMenu size={30} />
-          </NavIcon>
-          <NavIcon onClick={handleIconClick}>
-            <RiCloseFill size={30} />
+          <NavIcon onClick={handleIconClick} showMenu={showMenu}>
+            <TbMenu size={30} className="open_menu" />
+            <RiCloseFill size={30} className="close_menu" />
           </NavIcon>
         </Flex>
       </Wrapper>
