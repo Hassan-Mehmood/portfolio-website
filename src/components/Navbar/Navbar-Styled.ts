@@ -22,6 +22,7 @@ export const Flex = styled.div`
 export const Logo = styled.div`
   font-family: "Rubik", sans-serif;
   cursor: pointer;
+  font-size: 1.25rem;
 `;
 
 export const NavLinks = styled.ul<Props>`
@@ -41,7 +42,7 @@ export const NavLinks = styled.ul<Props>`
     bottom: 0;
     margin: 0;
     min-width: 100%;
-    background-color: #000000c2;
+    background-color: #000000e4;
     z-index: 5;
   }
 `;
