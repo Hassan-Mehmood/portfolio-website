@@ -1,6 +1,34 @@
-import { Nav, Wrapper, Flex, Logo, NavItems, NavLinks } from "./Navbar-Styled";
+import { useState } from "react";
+
+import {
+  Nav,
+  Wrapper,
+  Flex,
+  Logo,
+  NavItems,
+  NavLinks,
+  NavIcon,
+} from "./Navbar-Styled";
+import { TbMenu } from "react-icons/tb";
+import { RiCloseFill } from "react-icons/ri";
+
+export interface Props {
+  showMenu: boolean;
+}
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleIconClick = () => {
+    if (showMenu) {
+      setShowMenu(false);
+    } else {
+      setShowMenu(true);
+    }
+  };
+
+  console.log(showMenu);
+
   return (
     <Nav>
       <Wrapper>
@@ -8,7 +36,7 @@ const Navbar = () => {
           <Logo>
             <h1>Hassan</h1>
           </Logo>
-          <NavLinks>
+          <NavLinks showMenu={showMenu}>
             <NavItems>
               <a href="#Home">Home</a>
             </NavItems>
@@ -25,6 +53,12 @@ const Navbar = () => {
               <a href="#Contact">Contact</a>
             </NavItems>
           </NavLinks>
+          <NavIcon onClick={handleIconClick}>
+            <TbMenu size={30} />
+          </NavIcon>
+          <NavIcon onClick={handleIconClick}>
+            <RiCloseFill size={30} />
+          </NavIcon>
         </Flex>
       </Wrapper>
     </Nav>
