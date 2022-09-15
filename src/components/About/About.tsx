@@ -2,7 +2,6 @@ import { BsLinkedin } from "react-icons/bs";
 import { FiInstagram } from "react-icons/fi";
 import { AiFillFacebook } from "react-icons/ai";
 import {
-  Section,
   Wrapper,
   TextSection,
   ImageSection,
@@ -12,8 +11,8 @@ import {
 
 const About = () => {
   return (
-    <Section>
-      <Wrapper>
+    <section>
+      <Wrapper id="about">
         <ImageSection>
           <img src={require("../../images/about-me.jpg")} alt="" />
         </ImageSection>
@@ -55,7 +54,7 @@ const About = () => {
           </SocialIcons>
         </TextSection>
       </Wrapper>
-    </Section>
+    </section>
   );
 };
 

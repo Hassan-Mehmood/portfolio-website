@@ -19,9 +19,8 @@ const Hero = () => {
           <Text>
             <h2>I'm Web Developer Hassan Mehmood</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed qui
-              ad iusto exercitationem eaque vitae accusantium, veniam blanditiis
-              repellendus? Veritatis.
+              A Sophomore & a Computer Science major at the Institute of
+              Management Sciences having vast experience in Web Technologies
             </p>
           </Text>
           <Button btnType="filled">See my work</Button>

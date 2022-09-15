@@ -1,8 +1,5 @@
 import styled from "styled-components";
 
-export const Section = styled.section`
-  margin-bottom: 100rem;
-`;
 export const Wrapper = styled.div`
   max-width: 1024px;
   margin: 0 auto;
@@ -16,6 +13,14 @@ export const Wrapper = styled.div`
 `;
 export const TextSection = styled.div`
   text-align: center;
+
+  @media (min-width: 761px) {
+    flex: 1;
+    text-align: left;
+  }
+`;
+
+export const Text = styled.div`
   h2 {
     font-size: 1.5rem;
     color: #000a2d;
@@ -34,11 +39,6 @@ export const TextSection = styled.div`
     font-size: 1.1rem;
     font-family: "Rubik", sans-serif;
     margin-bottom: 1rem;
-  }
-
-  @media (min-width: 761px) {
-    flex: 1;
-    text-align: left;
   }
 `;
 
@@ -65,4 +65,3 @@ export const ImageSection = styled.div`
     flex: 1;
   }
 `;
-export const Text = styled.div``;
