@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  max-width: 1024px;
+  max-width: 80.6875rem;
   margin: 0 auto;
   padding: 4rem 2rem 0;
 
@@ -39,6 +39,14 @@ export const Text = styled.div`
     font-size: 1.1rem;
     font-family: "Rubik", sans-serif;
     margin-bottom: 1rem;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: 761px) {
+      max-width: 512px;
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 `;
 
