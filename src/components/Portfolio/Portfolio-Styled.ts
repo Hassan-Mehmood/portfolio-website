@@ -24,13 +24,57 @@ export const Categories = styled.div`
   }
 `;
 
+export const Projects = styled.div`
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  @media (min-width: 700px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 950px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+`;
 export const Project = styled.div`
-  margin: 1rem 0;
+  position: relative;
+  overflow: hidden;
+  max-width: 460px;
+  margin: 0 auto;
   .project_img {
     img {
       display: block;
       max-width: 100%;
       margin: 0 auto;
     }
+  }
+  .project_details {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 1rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: scroll;
+    display: none;
+
+    h3 {
+      font-size: 1.75rem;
+      margin: 0 0 1rem 0;
+    }
+    p {
+      line-height: 1.5;
+    }
+
+    &.show {
+      display: block;
+    }
+  }
+  .svg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #fff;
   }
 `;
