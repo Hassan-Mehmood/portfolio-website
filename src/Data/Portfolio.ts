@@ -1,4 +1,4 @@
-const data = [
+export const data = [
   {
     id: 1,
     img: "img1.png",
@@ -9,10 +9,8 @@ const data = [
   {
     id: 2,
     img: "img1.png",
-    name: "Insure Landing Page",
+    name: "Sunny Side Landing Page",
     category: "Landing Pages",
-    description: "This is a landing page for now",
+    description: "This is a Sunny side landing page",
   },
 ];
-
-export default data;
