@@ -1,5 +1,11 @@
 import { useState } from "react";
-import { Wrapper, Categories, Project, Projects } from "./Portfolio-Styled";
+import {
+  Section,
+  Wrapper,
+  Categories,
+  Project,
+  Projects,
+} from "./Portfolio-Styled";
 import { MdOutlineExpandMore } from "react-icons/md";
 import projectsData from "../../Data/Portfolio.json";
 export interface Props {
@@ -10,7 +16,7 @@ const Portfolio = () => {
   const [portfolioData, setPortfolioData] = useState(projectsData);
 
   return (
-    <section>
+    <Section>
       <Wrapper>
         <h3>Portfolio</h3>
         <Categories>
@@ -54,7 +60,7 @@ const Portfolio = () => {
           ))}
         </Projects>
       </Wrapper>
-    </section>
+    </Section>
   );
 };
 
