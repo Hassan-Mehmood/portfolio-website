@@ -7,10 +7,15 @@ export interface Props {
   showDetails?: boolean;
 }
 const Portfolio = () => {
-  const [projects, setProjects] = useState(projectsData);
+  const [portfolioData, setPortfolioData] = useState(projectsData);
   const [showProjectDetails, setShowProjectDetails] = useState(false);
-  const handleSvgClick = () => {
-    setShowProjectDetails(!showProjectDetails);
+
+  const handleSvgClick = (id: number) => {
+    const { 0: clickedProject } = portfolioData.filter(
+      (project) => project.id === id
+    );
+    clickedProject.showDescription = true;
+    console.log(clickedProject);
   };
 
   return (
@@ -33,7 +38,7 @@ const Portfolio = () => {
         </Categories>
 
         <Projects>
-          {projects?.map((project) => (
+          {portfolioData?.map((project) => (
             <Project key={project.id}>
               <div className="project_img">
                 <img src={require("../../images/img1.png")} alt="" />
@@ -48,7 +53,7 @@ const Portfolio = () => {
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
               </div>
-              <span className="svg" onClick={handleSvgClick}>
+              <span className="svg" onClick={() => handleSvgClick(project.id)}>
                 <MdOutlineExpandMore size={25} />
               </span>
             </Project>

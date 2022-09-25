@@ -4,23 +4,23 @@
     "img": "img1.png",
     "name": "Insure Landing Page",
     "category": "Landing Pages",
-    "description":
-      "This is a landing page for now"
+    "description": "This is a landing page for now",
+    "showDescription": false
   },
   { 
     "id": 2,
     "img": "img1.png",
     "name": "Sunny Side Landing Page",
     "category": "Landing Pages",
-    "description":
-      "This is a Sunny side landing page"
+    "description": "This is a Sunny side landing page",
+    "showDescription": false
   },
   { 
     "id": 3,
     "img": "img1.png",
     "name": "Third Landing Page",
     "category": "Landing Pages",
-    "description":
-      "This is a Third landing page"
+    "description": "This is a Third landing page",
+    "showDescription": false
   }
 ]
