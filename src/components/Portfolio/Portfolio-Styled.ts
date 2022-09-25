@@ -39,7 +39,15 @@ export const Project = styled.div`
   position: relative;
   overflow: hidden;
   max-width: 460px;
+  max-height: 360px;
   margin: 0 auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  &:hover .project_details,
+  &:focus .project_details {
+    opacity: 1;
+  }
+
   .project_img {
     img {
       display: block;
@@ -55,9 +63,10 @@ export const Project = styled.div`
     right: 0;
     padding: 2rem 1rem;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.7);
-    overflow: scroll;
-    display: none;
+    background-color: rgba(0, 0, 0, 0.9);
+
+    opacity: 0;
+    transition: opacity 150ms ease;
 
     h3 {
       font-size: 1.75rem;
@@ -71,10 +80,20 @@ export const Project = styled.div`
       display: block;
     }
   }
-  .svg {
+  /* .svg {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 5px;
+    right: 10px;
     color: #fff;
-  }
+    cursor: pointer;
+    transition: transform 100ms ease;
+    background-color: #000;
+
+    @media (min-width: 900px) {
+      display: none;
+    }
+    &.rotate {
+      transform: rotate(180deg);
+    }
+  } */
 `;
