@@ -13,7 +13,8 @@ export const Wrapper = styled.div`
     font-family: "Rufina", serif;
     font-size: 2rem;
   }
-  p {
+  p,
+  a {
     font-family: "Rubik", serif;
   }
 `;
@@ -46,10 +47,12 @@ export const Project = styled.div`
   max-height: 360px;
   margin: 0 auto;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 3px;
 
   &:hover .project_details,
   &:focus .project_details {
     opacity: 1;
+    transform: scale(1);
   }
 
   .project_img {
@@ -58,6 +61,9 @@ export const Project = styled.div`
       max-width: 100%;
       margin: 0 auto;
     }
+  }
+  .project_details::-webkit-scrollbar {
+    display: none;
   }
   .project_details {
     position: absolute;
@@ -68,9 +74,12 @@ export const Project = styled.div`
     padding: 2rem 1rem;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.9);
-
     opacity: 0;
-    transition: opacity 150ms ease;
+    transform: scale(1.1);
+    transition: all 150ms ease;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 
     h3 {
       font-size: 1.75rem;
@@ -78,6 +87,17 @@ export const Project = styled.div`
     }
     p {
       line-height: 1.5;
+    }
+    a {
+      text-decoration: none;
+      background-color: #fff;
+      color: #000;
+      padding: 0.25rem 0.5rem;
+      margin: 1rem 01rem 0 0;
+      display: inline-block;
+
+      &:hover {
+      }
     }
 
     &.show {

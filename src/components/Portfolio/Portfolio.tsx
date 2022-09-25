@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import {
   Section,
   Wrapper,
@@ -6,7 +7,7 @@ import {
   Project,
   Projects,
 } from "./Portfolio-Styled";
-import { MdOutlineExpandMore } from "react-icons/md";
+import { FaGithub } from "react-icons/fa";
 import projectsData from "../../Data/Portfolio.json";
 export interface Props {
   activeTab?: boolean;
@@ -49,13 +50,23 @@ const Portfolio = () => {
               >
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
+                <div>
+                  <a
+                    href={`${project.link}`}
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    Visit
+                  </a>
+                  <a
+                    href={`${project.github}`}
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    <FaGithub />
+                  </a>
+                </div>
               </div>
-              {/* <span
-                className={`${project.showDescription ? "svg rotate" : "svg"}`}
-                onClick={() => handleSvgClick(project.id)}
-              >
-                <MdOutlineExpandMore size={30} />
-              </span> */}
             </Project>
           ))}
         </Projects>

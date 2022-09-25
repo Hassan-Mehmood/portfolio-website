@@ -3,24 +3,31 @@
     "id": 1,
     "img": "Insure.png",
     "name": "Insure Landing Page",
-    "category": "Landing Pages",
+    "category": "LandingPages",
     "description": "This is a landing page for now",
+    "link":"https://hassan-mehmood.github.io/Bookmark-landing-page/",
+    "github":"https://github.com/Hassan-Mehmood/Insure-Frontend-Mentor",
     "showDescription": false
   },
   { 
     "id": 2,
     "img": "SunnySide.png",
     "name": "Sunny Side Landing Page",
-    "category": "Landing Pages",
+    "category": "LandingPages",
     "description": "This is a Sunny side landing page",
+    "link":"https://hassan-mehmood.github.io/Sunnyside-landing-page/",
+    "github":"https://github.com/Hassan-Mehmood/Sunnyside-landing-page",
     "showDescription": false
+    
   },
   { 
     "id": 3,
     "img": "Bookmark.png",
     "name": "Third Landing Page",
-    "category": "Landing Pages",
+    "category": "LandingPages",
     "description": "This is a Third landing page",
+    "link":"https://hassan-mehmood.github.io/Insure-Frontend-Mentor/",
+    "github":"https://github.com/Hassan-Mehmood/Insure-Landing-Page",
     "showDescription": false
   }
 ]
