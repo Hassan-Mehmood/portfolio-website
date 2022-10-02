@@ -11,7 +11,6 @@ import { FaGithub } from "react-icons/fa";
 import projectsData from "../../Data/Portfolio.json";
 export interface Props {
   activeTab?: boolean;
-  showDetails?: boolean;
 }
 const Portfolio = () => {
   const [portfolioData, setPortfolioData] = useState(projectsData);
@@ -41,23 +40,19 @@ const Portfolio = () => {
               <div className="project_img">
                 <img src={require(`../../images/${project.img}`)} alt="" />
               </div>
-              <div
-                className={`${
-                  project.showDescription
-                    ? "project_details show"
-                    : "project_details"
-                }`}
-              >
+              <div className={"project_details"}>
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
                 <div>
-                  <a
-                    href={`${project.link}`}
-                    target={"_blank"}
-                    rel="noreferrer"
-                  >
-                    Visit
-                  </a>
+                  {project.link && (
+                    <a
+                      href={`${project.link}`}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Visit
+                    </a>
+                  )}
                   <a
                     href={`${project.github}`}
                     target={"_blank"}

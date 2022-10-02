@@ -48,6 +48,7 @@ export const Project = styled.div`
   margin: 0 auto;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 3px;
+  cursor: pointer;
 
   &:hover .project_details,
   &:focus .project_details {
@@ -62,6 +63,7 @@ export const Project = styled.div`
       margin: 0 auto;
     }
   }
+
   .project_details::-webkit-scrollbar {
     display: none;
   }
