@@ -11,8 +11,8 @@ import {
 
 const About = () => {
   return (
-    <section>
-      <Wrapper id="about">
+    <section id="About">
+      <Wrapper>
         <ImageSection>
           <img src={require("../../images/about-me.jpg")} alt="" />
         </ImageSection>

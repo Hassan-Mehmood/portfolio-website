@@ -47,9 +47,6 @@ const Navbar = () => {
             <NavItems>
               <a href="#Portfolio">Portfolio</a>
             </NavItems>
-            <NavItems>
-              <a href="#Contact">Contact</a>
-            </NavItems>
           </NavLinks>
           <NavIcon onClick={handleIconClick} showMenu={showMenu}>
             <TbMenu size={30} className="open_menu" />

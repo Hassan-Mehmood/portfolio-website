@@ -8,7 +8,7 @@ import {
 
 const Services = () => {
   return (
-    <section>
+    <section id="Services">
       <Wrapper>
         <ServicesHeading>
           <h3>What Services you will get from me!</h3>

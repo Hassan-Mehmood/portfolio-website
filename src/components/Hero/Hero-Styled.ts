@@ -6,7 +6,7 @@ export const Main = styled.main`
 
 export const Wrapper = styled.div`
   max-width: 1024px;
-  margin: 0 auto;
+  margin: 75px auto 0;
   @media (min-width: 58em) {
     display: flex;
     justify-content: space-between;

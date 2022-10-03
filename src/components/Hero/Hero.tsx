@@ -13,7 +13,7 @@ export interface buttons {
 
 const Hero = () => {
   return (
-    <Main>
+    <Main id="Home">
       <Wrapper>
         <TextSection>
           <Text>

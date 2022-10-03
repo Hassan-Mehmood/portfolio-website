@@ -10,7 +10,7 @@
   },
   { 
     "id": 2,
-    "img": "countries2.jpg",
+    "img": "Countries.png",
     "name": "Countries Application",
     "category": "React",
     "description": "React Countries App",
@@ -23,7 +23,7 @@
     "img": "nlc.png",
     "name": "PHP & MYSQL Website for Client",
     "category": "Wordpress",
-    "description": "This Website was developed for a client to help him manage Court Cases, Contracts/Agreements & Inquiries",
+    "description": "This Website was developed for a client to help him manage his office Court Cases, Contracts/Agreements & Inquiries",
     "link":"",
     "github":""
     

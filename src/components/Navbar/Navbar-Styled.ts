@@ -4,6 +4,11 @@ import { Props } from "./Navbar";
 export const Nav = styled.nav`
   border-bottom: 1px solid #0000001c;
   min-height: 4.6875rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
 `;
 
 export const Wrapper = styled.div`
@@ -36,7 +41,7 @@ export const NavLinks = styled.ul<Props>`
     align-items: center;
     justify-content: space-evenly;
 
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     bottom: 0;
@@ -78,6 +83,9 @@ export const NavIcon = styled.div<Props>`
 
     .close_menu {
       display: ${(props) => (props.showMenu ? "block" : "none")};
+      position: fixed;
+      top: 24px;
+      right: 2rem;
     }
     .open_menu {
       display: ${(props) => (props.showMenu ? "none" : "block")};

@@ -32,7 +32,7 @@ const Portfolio = () => {
   };
 
   return (
-    <Section>
+    <Section id="Portfolio">
       <Wrapper>
         <h3>Portfolio</h3>
         {/* I think this is not a good solution for this problem but due to time shortage i am in hurry */}
