@@ -27,12 +27,16 @@ export const Categories = styled.div`
     cursor: pointer;
     margin: 0.25rem 0 0 0;
   }
+  .active_category {
+    border-bottom: 2px solid #ec5b53;
+  }
 `;
 
 export const Projects = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
+
   @media (min-width: 700px) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -60,6 +64,7 @@ export const Project = styled.div`
     img {
       display: block;
       max-width: 100%;
+      object-fit: contain;
       margin: 0 auto;
     }
   }

@@ -20,12 +20,12 @@
   },
   { 
     "id": 3,
-    "img": "SunnySide.png",
+    "img": "nlc.png",
     "name": "PHP & MYSQL Website for Client",
-    "category": "LandingPages",
-    "description": "This is a Sunny side landing page",
-    "link":"https://hassan-mehmood.github.io/Sunnyside-landing-page/",
-    "github":"https://github.com/Hassan-Mehmood/Sunnyside-landing-page"
+    "category": "Wordpress",
+    "description": "This Website was developed for a client to help him manage Court Cases, Contracts/Agreements & Inquiries",
+    "link":"",
+    "github":""
     
   },
   { 
