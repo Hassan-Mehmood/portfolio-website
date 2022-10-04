@@ -15,7 +15,7 @@ export interface Props {
 }
 const Portfolio = () => {
   const [portfolioData] = useState(projectsData);
-  const [projectDetails, setProjectDetails] = useState({});
+  const [projectDetails, setProjectDetails] = useState({ img: "" });
   const [projectDetailsOverlay, setProjectDetailsOverlay] = useState(false);
   const [projectCategories, setProjectCategories] = useState({
     All: true,
@@ -39,7 +39,7 @@ const Portfolio = () => {
       (projectDetail) => projectDetail.id === id
     );
     setProjectDetailsOverlay(!projectDetailsOverlay);
-    setProjectDetails({ ...project });
+    setProjectDetails({ img: project.img });
   };
   console.log(projectDetails);
   return (
@@ -126,11 +126,13 @@ const Portfolio = () => {
 
         {projectDetailsOverlay && (
           <>
-            <ProjectOverlay>
-              <div
-                className="overlay"
-                onClick={() => setProjectDetailsOverlay(false)}
-              ></div>
+            <ProjectOverlay onClick={() => setProjectDetailsOverlay(false)}>
+              <div className="img_container">
+                <img
+                  src={require(`../../images/${projectDetails.img}`)}
+                  alt=""
+                />
+              </div>
             </ProjectOverlay>
           </>
         )}
