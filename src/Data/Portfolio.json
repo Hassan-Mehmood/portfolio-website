@@ -1,6 +1,15 @@
 [
   {
     "id": 1,
+    "img": "Blog.png",
+    "name": "Full Stack Blog App",
+    "category": "React",
+    "description": "A blogging website where users can register and create their account using their email and username, User can write Blogs which will be shown on the home page, Only the author can delete his blogs Users can see their published Blogs. Signup, Login, Logout - Delete your own Blogs - Check your published Blogs - Can upload images with Blogs - User Authentication",
+    "link":"",
+    "github":"https://github.com/Hassan-Mehmood/Blog-App"
+  },
+  {
+    "id": 6,
     "img": "Insure.png",
     "name": "Insure Landing Page",
     "category": "LandingPages",

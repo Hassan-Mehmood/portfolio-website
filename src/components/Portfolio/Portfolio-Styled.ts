@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Categories = styled.div`
-  margin: 1rem 0;
+  margin: 1rem 0 2rem;
   p {
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -64,8 +64,6 @@ export const Project = styled.div`
     img {
       display: block;
       max-width: 100%;
-      object-fit: contain;
-      margin: 0 auto;
     }
   }
 
@@ -111,20 +109,16 @@ export const Project = styled.div`
       display: block;
     }
   }
-  /* .svg {
-    position: absolute;
-    bottom: 5px;
-    right: 10px;
-    color: #fff;
-    cursor: pointer;
-    transition: transform 100ms ease;
-    background-color: #000;
+`;
 
-    @media (min-width: 900px) {
-      display: none;
-    }
-    &.rotate {
-      transform: rotate(180deg);
-    }
-  } */
+export const ProjectOverlay = styled.div`
+  .overlay {
+    position: fixed;
+    z-index: 999999999999999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 1);
+  }
 `;
