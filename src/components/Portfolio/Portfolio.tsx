@@ -6,7 +6,6 @@ import {
   Categories,
   Project,
   Projects,
-  ProjectOverlay,
 } from "./Portfolio-Styled";
 import { FaGithub } from "react-icons/fa";
 import projectsData from "../../Data/Portfolio.json";
@@ -15,7 +14,7 @@ export interface Props {
 }
 const Portfolio = () => {
   const [portfolioData] = useState(projectsData);
-  const [projectDetails, setProjectDetails] = useState({ img: "" });
+  const [, setProjectDetails] = useState({ img: "" });
   const [projectDetailsOverlay, setProjectDetailsOverlay] = useState(false);
   const [projectCategories, setProjectCategories] = useState({
     All: true,
@@ -41,7 +40,6 @@ const Portfolio = () => {
     setProjectDetailsOverlay(!projectDetailsOverlay);
     setProjectDetails({ img: project.img });
   };
-  console.log(projectDetails);
   return (
     <Section id="Portfolio">
       <Wrapper>
@@ -123,19 +121,6 @@ const Portfolio = () => {
               </Project>
             ))}
         </Projects>
-
-        {projectDetailsOverlay && (
-          <>
-            <ProjectOverlay onClick={() => setProjectDetailsOverlay(false)}>
-              <div className="img_container">
-                <img
-                  src={require(`../../images/${projectDetails.img}`)}
-                  alt=""
-                />
-              </div>
-            </ProjectOverlay>
-          </>
-        )}
       </Wrapper>
     </Section>
   );
