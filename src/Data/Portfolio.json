@@ -1,10 +1,19 @@
 [
   {
     "id": 1,
+    "img": "Blog.png",
+    "name": "Full Stack Blog App",
+    "category": "React",
+    "description": "A blogging website where users can register and create their account using their email and username, User can write Blogs which will be shown on the home page, Only the author can delete his blogs Users can see their published Blogs. Signup, Login, Logout - Delete your own Blogs - Check your published Blogs - Can upload images with Blogs - User Authentication",
+    "link":"",
+    "github":"https://github.com/Hassan-Mehmood/Blog-App"
+  },
+  {
+    "id": 6,
     "img": "Insure.png",
     "name": "Insure Landing Page",
     "category": "LandingPages",
-    "description": "This is a landing page for now",
+    "description": "This landing page is made as a challeneg from Frontend Mentor",
     "link":"https://hassan-mehmood.github.io/Bookmark-landing-page/",
     "github":"https://github.com/Hassan-Mehmood/Insure-Frontend-Mentor"
   },
@@ -13,7 +22,7 @@
     "img": "Countries.png",
     "name": "Countries Application",
     "category": "React",
-    "description": "React Countries App",
+    "description": "React Countries App is an application which is using \"REST Countries API\" to show data about different countries",
     "link":"",
     "github":"https://github.com/Hassan-Mehmood/Countries"
     
@@ -33,7 +42,7 @@
     "img": "SunnySide.png",
     "name": "Sunny Side Landing Page",
     "category": "LandingPages",
-    "description": "This is a Sunny side landing page",
+    "description": "This landing page is made as a challeneg from Frontend Mentor",
     "link":"https://hassan-mehmood.github.io/Sunnyside-landing-page/",
     "github":"https://github.com/Hassan-Mehmood/Sunnyside-landing-page"
     
@@ -43,7 +52,7 @@
     "img": "Bookmark.png",
     "name": "Third Landing Page",
     "category": "LandingPages",
-    "description": "This is a Third landing page",
+    "description": "This landing page is made as a challeneg from Frontend Mentor",
     "link":"https://hassan-mehmood.github.io/Insure-Frontend-Mentor/",
     "github":"https://github.com/Hassan-Mehmood/Insure-Landing-Page"
   }
