@@ -1,29 +1,24 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import {
-  Section,
-  Wrapper,
-  Categories,
-  Project,
-  Projects,
-} from "./Portfolio-Styled";
-import { FaGithub } from "react-icons/fa";
-import projectsData from "../../Data/Portfolio.json";
+import { Section, Wrapper, Categories, Project, Projects } from './Portfolio-Styled';
+import { FaGithub } from 'react-icons/fa';
+import projectsData from '../../Data/Portfolio.json';
 export interface Props {
   activeTab?: boolean;
 }
 const Portfolio = () => {
   const [portfolioData] = useState(projectsData);
-  const [, setProjectDetails] = useState({ img: "" });
+  const [, setProjectDetails] = useState({ img: '' });
   const [projectDetailsOverlay, setProjectDetailsOverlay] = useState(false);
   const [projectCategories, setProjectCategories] = useState({
     All: true,
     LandingPages: false,
+    MernStack: false,
     React: false,
     Wordpress: false,
   });
 
-  let [category, setCategory] = useState("All");
+  let [category, setCategory] = useState('All');
   const handleCategoryClick = (item: string) => {
     setProjectCategories({
       ...projectCategories,
@@ -34,9 +29,7 @@ const Portfolio = () => {
   };
 
   const showProjectDetails = (id: number) => {
-    const [project] = portfolioData.filter(
-      (projectDetail) => projectDetail.id === id
-    );
+    const [project] = portfolioData.filter((projectDetail) => projectDetail.id === id);
     setProjectDetailsOverlay(!projectDetailsOverlay);
     setProjectDetails({ img: project.img });
   };
@@ -47,30 +40,32 @@ const Portfolio = () => {
         {/* I think this is not a good solution for this problem but due to time shortage i am in hurry */}
         <Categories>
           <p
-            onClick={() => handleCategoryClick("All")}
-            className={`${projectCategories.All ? "active_category" : ""}`}
+            onClick={() => handleCategoryClick('All')}
+            className={`${projectCategories.All ? 'active_category' : ''}`}
           >
             All
           </p>
           <p
-            onClick={() => handleCategoryClick("LandingPages")}
-            className={`${
-              projectCategories.LandingPages ? "active_category" : ""
-            }`}
+            onClick={() => handleCategoryClick('LandingPages')}
+            className={`${projectCategories.LandingPages ? 'active_category' : ''}`}
           >
             Landing Pages
           </p>
           <p
-            onClick={() => handleCategoryClick("React")}
-            className={`${projectCategories.React ? "active_category" : ""}`}
+            onClick={() => handleCategoryClick('React')}
+            className={`${projectCategories.React ? 'active_category' : ''}`}
           >
             React
           </p>
           <p
-            onClick={() => handleCategoryClick("Wordpress")}
-            className={`${
-              projectCategories.Wordpress ? "active_category" : ""
-            }`}
+            onClick={() => handleCategoryClick('MernStack')}
+            className={`${projectCategories.MernStack ? 'active_category' : ''}`}
+          >
+            MERN Stack
+          </p>
+          <p
+            onClick={() => handleCategoryClick('Wordpress')}
+            className={`${projectCategories.Wordpress ? 'active_category' : ''}`}
           >
             Wordpress & PHP
           </p>
@@ -80,39 +75,28 @@ const Portfolio = () => {
           {/* category === "All" && */}
           {portfolioData
             ?.filter((project) => {
-              if (category === "All") {
+              if (category === 'All') {
                 return project;
               } else {
                 return project.category === category;
               }
             })
             .map((project) => (
-              <Project
-                key={project.id}
-                onClick={() => showProjectDetails(project.id)}
-              >
+              <Project key={project.id} onClick={() => showProjectDetails(project.id)}>
                 <div className="project_img">
                   <img src={require(`../../images/${project.img}`)} alt="" />
                 </div>
-                <div className={"project_details"}>
+                <div className={'project_details'}>
                   <h3>{project.name}</h3>
                   <p>{project.description}</p>
                   <div>
                     {project.link && (
-                      <a
-                        href={`${project.link}`}
-                        target={"_blank"}
-                        rel="noreferrer"
-                      >
+                      <a href={`${project.link}`} target={'_blank'} rel="noreferrer">
                         Visit
                       </a>
                     )}
                     {project.github && (
-                      <a
-                        href={`${project.github}`}
-                        target={"_blank"}
-                        rel="noreferrer"
-                      >
+                      <a href={`${project.github}`} target={'_blank'} rel="noreferrer">
                         <FaGithub />
                       </a>
                     )}

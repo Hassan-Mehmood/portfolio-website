@@ -1,9 +1,18 @@
 [
   {
+    "id": 7,
+    "img": "Crypto-Wallet Home3.png",
+    "name": "Crypto Wallet",
+    "category": "MernStack",
+    "description": "An application to track crypto portfolio performance, Calculated profits and losses for the overall portfolio, providing users with insights into their investment performance.",
+    "link":"",
+    "github":"https://github.com/Hassan-Mehmood/crypto-wallet-2.0"
+  },
+  {
     "id": 1,
     "img": "Blog.png",
     "name": "Full Stack Blog App",
-    "category": "React",
+    "category": "MernStack",
     "description": "A blogging website where users can register and create their account using their email and username, User can write Blogs which will be shown on the home page, Only the author can delete his blogs Users can see their published Blogs. Signup, Login, Logout - Delete your own Blogs - Check your published Blogs - Can upload images with Blogs - User Authentication",
     "link":"",
     "github":"https://github.com/Hassan-Mehmood/Blog-App"
