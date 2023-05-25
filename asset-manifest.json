@@ -1,22 +1,25 @@
 {
   "files": {
     "main.css": "/portfolio-website/static/css/main.e351d686.css",
-    "main.js": "/portfolio-website/static/js/main.d7b90893.js",
+    "main.js": "/portfolio-website/static/js/main.420d7b32.js",
     "static/media/SunnySide.png": "/portfolio-website/static/media/SunnySide.e887e2fdcb76ee600f5b.png",
     "static/media/Insure.png": "/portfolio-website/static/media/Insure.baf50986f24930752847.png",
     "static/media/Blog.png": "/portfolio-website/static/media/Blog.c285598bc266abb758bb.png",
     "static/media/FireShot Capture 001 - React App - localhost.png": "/portfolio-website/static/media/FireShot Capture 001 - React App - localhost.c285598bc266abb758bb.png",
     "static/media/Countries.png": "/portfolio-website/static/media/Countries.156c77deb49b8d62d2e4.png",
     "static/media/Bookmark.png": "/portfolio-website/static/media/Bookmark.a0fa43b5df0563d658da.png",
+    "static/media/Crypto-Wallet Home3.png": "/portfolio-website/static/media/Crypto-Wallet Home3.2307ba1d247c77f76ab0.png",
+    "static/media/Crypto-Wallet Home.png": "/portfolio-website/static/media/Crypto-Wallet Home.aeb7c540dbdc6edabd57.png",
+    "static/media/Crypto-Wallet Home2.png": "/portfolio-website/static/media/Crypto-Wallet Home2.d7009ba6375606551aeb.png",
     "static/media/hero-img.png": "/portfolio-website/static/media/hero-img.8c02febedcd31a844062.png",
     "static/media/nlc.png": "/portfolio-website/static/media/nlc.33d729c85481aca8d065.png",
     "static/media/about-me.jpg": "/portfolio-website/static/media/about-me.76a5217b12f709b3b342.jpg",
     "index.html": "/portfolio-website/index.html",
     "main.e351d686.css.map": "/portfolio-website/static/css/main.e351d686.css.map",
-    "main.d7b90893.js.map": "/portfolio-website/static/js/main.d7b90893.js.map"
+    "main.420d7b32.js.map": "/portfolio-website/static/js/main.420d7b32.js.map"
   },
   "entrypoints": [
     "static/css/main.e351d686.css",
-    "static/js/main.d7b90893.js"
+    "static/js/main.420d7b32.js"
   ]
 }
